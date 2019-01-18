@@ -1,7 +1,7 @@
 ## Part 1: Debugging
-
+library(lintr)
 my_num <- 6
-initials <- "?. ?."
+initials <- "?.?."
 
 my_vector <- c(my_num, initials)
 
@@ -9,21 +9,21 @@ my_vector <- c(my_num, initials)
 vector_sum <- sum(my_vector)
 
 # Describe why this doesn't work: 
-# 
+# sum() will only work with numbers, initials are letters.
 
 install.packages("stringr")
-
+# library(stringr)
 my_line <- "Hey, hey, this is the library"
 
 print(str_length(my_line))
 
 # Describe why this doesn't work: 
-# 
+# You need to run library(stringr) first before that custom function will work
 
 said_the_famous <- paste(my_line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# initial is not a variable, should be initials
 
 
 ## Part 2 - Vector and function practice
